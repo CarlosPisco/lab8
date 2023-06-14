@@ -19,7 +19,7 @@ public class TipoTicketEvento {
     @Column(name = "cantidad")
     private Integer cantidad;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne( optional = false)
     @JoinColumn(name = "idEvento", nullable = false)
     private Evento idEvento;
 
